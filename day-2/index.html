@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Tech Event Registration</title>
+</head>
+<body>
+
+    
+    <h1>Annual Tech Conference 2026</h1>
+
+   
+    <h2>Event Schedule</h2>
+
+    <table border="1" cellpadding="10">
+        <thead>
+            <tr>
+                <th>Time</th>
+                <th>Activity</th>
+                <th>Venue</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>09:00 AM</td>
+                <td>Opening Ceremony</td>
+                <td>Main Hall</td>
+            </tr>
+            <tr>
+                <td>11:00 AM</td>
+                <td>Technical Workshop</td>
+                <td>Lab 2</td>
+            </tr>
+            <tr>
+                <td>02:00 PM</td>
+                <td>Guest Speaker Session</td>
+                <td>Auditorium</td>
+            </tr>
+        </tbody>
+    </table>
+
+
+    <h2>Event Registration</h2>
+
+    <form action="submit.html" method="post">
+       
+        
+        <label for="name">Full Name:</label><br>
+        <input type="text" id="name" name="name" required><br><br>
+
+       
+        <label for="email">Email Address:</label><br>
+        <input type="email" id="email" name="email" required><br><br>
+
+        <label for="age">Age:</label><br>
+        <input type="number" id="age" name="age" min="10"><br><br>
+
+        <label for="date">Event Date:</label><br>
+        <input type="date" id="date" name="event_date" required><br><br>
+
+
+        <p>Ticket Type:</p>
+        <input type="radio" id="standard" name="ticket" value="standard">
+        <label for="standard">Standard</label><br>
+
+        <input type="radio" id="vip" name="ticket" value="vip">
+        <label for="vip">VIP</label><br>
+
+        <input type="radio" id="student" name="ticket" value="student">
+        <label for="student">Student</label><br><br>
+
+        <p>Workshop Preferences:</p>
+        <input type="checkbox" id="web" name="workshop" value="web">
+        <label for="web">Web Development</label><br>
+
+        <input type="checkbox" id="ai" name="workshop" value="ai">
+        <label for="ai">Artificial Intelligence</label><br>
+
+        <input type="checkbox" id="cloud" name="workshop" value="cloud">
+        <label for="cloud">Cloud Computing</label><br><br>
+
+        <label for="comments">Additional Comments:</label><br>
+        <textarea id="comments" name="comments" rows="4" cols="40"></textarea><br><br>
+
+        <button type="submit">Register</button>
+
+    </form>
+
+</body>
+</html>
