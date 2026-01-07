@@ -9,7 +9,7 @@ int findMinPath(vector<vector<int>> &V, int r, int c) {
 
     if (r >= R || c >= C) return 100000000;
     if (r == R - 1 && c == C - 1) return 0;
-
+        
     if (dp[r][c] != -1) return dp[r][c];
 
     return dp[r][c] = V[r][c] +
